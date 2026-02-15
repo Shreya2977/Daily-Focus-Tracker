@@ -1,7 +1,7 @@
 # Daily-Focus-Tracker
 
-## 🚀 Project Overview: 
-Daily Focus & Audit DashboardA modern web application built with HTML5, CSS3, and Vanilla JavaScript that provides real-time visualization of productivity metrics. The dashboard features a "Time Warden" system that enforces a strict 24-hour daily limit, ensuring data integrity for time-tracking.
+## 🚀 Project Overview: Daily Focus & Audit Dashboard
+A modern web application built with HTML5, CSS3, and Vanilla JavaScript that provides real-time visualization of productivity metrics. The dashboard features a "Time Warden" system that enforces a strict 24-hour daily limit, ensuring data integrity for time-tracking.
 
 ## ✨ Key Features
 * Time Warden System: Intelligent input logic that automatically adjusts sliders to prevent the total logged time from exceeding 24 hours.
