@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus | Daily Screen Dashboard</title>
+    <!-- Google Fonts: Outfit for a modern, tech feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <div class="dashboard-container">
+        <header>
+            <div class="header-content">
+                <h1>Daily Focus</h1>
+                <p id="current-date">October 24, 2026</p>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">U</div>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <!-- Focus Score Section (Prominent) -->
+            <section class="card focus-card glass">
+                <div class="card-header">
+                    <h2>Focus Score</h2>
+                    <i data-feather="activity"></i>
+                </div>
+                <div class="circular-progress-container">
+                    <svg class="progress-ring" width="200" height="200">
+                        <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="12" fill="transparent" r="80" cx="100" cy="100"/>
+                        <circle class="progress-ring__circle" stroke="#8b5cf6" stroke-width="12" fill="transparent" r="80" cx="100" cy="100"/>
+                    </svg>
+                    <div class="score-display">
+                        <span id="focus-score-value">0</span>
+                        <span class="label">/ 100</span>
+                    </div>
+                </div>
+                <p class="insight-text" id="focus-insight">Keep pushing!</p>
+            </section>
+
+            <!-- Distraction Percentage Section -->
+            <section class="card distraction-card glass">
+                <div class="card-header">
+                    <h2>Distraction Level</h2>
+                    <i data-feather="alert-octagon"></i>
+                </div>
+                <div class="bar-chart-container">
+                    <div class="bar-group">
+                        <div class="bar-label">Distraction</div>
+                        <div class="bar-track">
+                            <div class="bar-fill" id="distraction-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="bar-value" id="distraction-value">0%</div>
+                    </div>
+                </div>
+                <div class="distraction-details">
+                    <div class="detail-item">
+                        <span class="dot social"></span> Social Media
+                    </div>
+                    <div class="detail-item">
+                        <span class="dot ent"></span> Entertainment
+                    </div>
+                </div>
+            </section>
+
+            <!-- Input / Control Section -->
+            <section class="card controls-card glass">
+                <div class="card-header">
+                    <h2>Today's Log</h2>
+                    <i data-feather="edit-3"></i>
+                </div>
+                
+                <div class="input-group">
+                    <label for="study-range">
+                        <span class="icon-label"><i data-feather="book-open"></i> Study</span>
+                        <span class="value-display"><span id="study-val">0</span> hrs</span>
+                    </label>
+                    <input type="range" id="study-range" min="0" max="12" step="0.5" value="0">
+                </div>
+
+                <div class="input-group">
+                    <label for="social-range">
+                        <span class="icon-label"><i data-feather="smartphone"></i> Social Media</span>
+                        <span class="value-display"><span id="social-val">0</span> hrs</span>
+                    </label>
+                    <input type="range" id="social-range" min="0" max="12" step="0.5" value="0">
+                </div>
+
+                <div class="input-group">
+                    <label for="ent-range">
+                        <span class="icon-label"><i data-feather="tv"></i> Entertainment</span>
+                        <span class="value-display"><span id="ent-val">0</span> hrs</span>
+                    </label>
+                    <input type="range" id="ent-range" min="0" max="12" step="0.5" value="0">
+                </div>
+            </section>
+
+            <!-- Stats Breakdown -->
+            <section class="card stats-card glass">
+                <div class="stat-item">
+                    <h3>Total Screen Time</h3>
+                    <p id="total-time">0 hrs</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Productivity Ratio</h3>
+                    <p id="prod-ratio">0%</p>
+                </div>
+            </section>
+            <section class="card weekly-card glass">
+    <div class="card-header">
+        <h2>Weekly Trend</h2>
+        <i data-feather="trending-up"></i>
+    </div>
+    
+<div class="card weekly-card">
+    <div class="card-header">
+        <h2>Weekly Audit</h2>
+        <div class="legend">
+            <span class="dot social"></span> <small>Distraction</small>
+        </div>
+    </div>
+    
+    <div class="bar-area" id="bar-area"></div>
+    
+    <div class="weekly-summary">
+        <p>Avg Focus Score: <span id="avg-focus">0</span>%</p>
+    </div>
+</div>
+
+<div class="analysis-grid" id="stats-grid"></div>
+
+    
+</section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

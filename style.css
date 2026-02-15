@@ -1,0 +1,474 @@
+:root {
+    --bg-dark: #0f172a;
+    --primary: #8b5cf6; /* Violet */
+    --secondary: #06b6d4; /* Cyan */
+    --accent: #ec4899; /* Pink */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Ambient Orbs */
+.background-globes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.globe {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: float 10s infinite ease-in-out alternate;
+}
+
+.globe-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--primary);
+    top: -100px;
+    left: -100px;
+}
+
+.globe-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--secondary);
+    bottom: -50px;
+    right: -50px;
+    animation-delay: 2s;
+}
+
+.globe-3 {
+    width: 200px;
+    height: 200px;
+    background: var(--accent);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 4s;
+    opacity: 0.4;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(20px, 40px); }
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header-content h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #fff 0%, var(--text-muted) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#current-date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.user-profile .avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+/* Grid System */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Card Styles */
+.card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.card-header i {
+    color: var(--text-muted);
+    width: 20px;
+    height: 20px;
+}
+
+/* Focus Ring */
+.circular-progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.8s ease-out, stroke 0.3s ease;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-linecap: round;
+}
+
+.score-display {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#focus-score-value {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.insight-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Distraction Bar */
+/* Fix for the horizontal bar container */
+.horizontal-bar-container {
+    margin: 2rem 0;
+    width: 100%;
+    display: block; /* Ensure it's not a flex-end container */
+}
+
+/* Ensure the track is visible */
+.distraction-card .bar-track {
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Visible gray track */
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ensure the fill has height */
+.distraction-card .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #f472b6);
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.4);
+    transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.distraction-card .bar-value {
+    display: block;
+    text-align: right;
+    font-weight: 700;
+    color: var(--accent);
+}
+.bar-chart-container {
+    margin: 1.5rem 0;
+}
+
+.bar-group {
+    margin-bottom: 1rem;
+}
+
+.bar-label {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+/* .bar-track {
+    height: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+} */
+
+/* .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #f472b6);
+    border-radius: 10px;
+    transition: width 0.8s ease-out;
+} */
+
+.bar-value {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.distraction-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.dot.social { background: var(--accent); }
+.dot.ent { background: var(--secondary); } /* Reusing secondary for entertainment contrast */
+
+/* Inputs & Controls */
+.input-group {
+    margin-bottom: 1.25rem;
+}
+
+.input-group label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.icon-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-label i {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted);
+}
+
+.value-display {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.1s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Stats */
+.stats-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: span 3;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(6, 182, 212, 0.1));
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+}
+
+.stat-item p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-variant-numeric: tabular-nums;
+}
+
+
+/* Analysis Grid Integration */
+.analysis-grid {
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+    margin-bottom: 2rem;
+    grid-column: span 3; /* Spans full width of your dashboard grid */
+}
+
+.day-card {
+    background: var(--glass-bg);
+    padding: 12px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid var(--glass-border);
+    transition: 0.3s;
+}
+
+.day-card:hover { transform: translateY(-3px); background: rgba(255,255,255,0.1); }
+.day-name { font-weight: bold; color: var(--text-muted); display: block; font-size: 0.8rem; margin-bottom: 5px; }
+.day-score { font-size: 1.2rem; font-weight: 800; color: var(--primary); display: block; }
+.day-distraction { font-size: 0.7rem; color: var(--accent); display: block; }
+
+
+
+/* Ensure the parent card doesn't restrict width */
+.weekly-card {
+    grid-column: span 3; /* Or span 2, depending on your grid */
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.bar-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; /* Changed from space-around to use full width */
+    height: 250px; 
+    padding: 20px 0; /* Vertical padding only */
+    position: relative;
+    width: 100%; /* Force it to take the full width of the card */
+    flex-grow: 1; /* Allows it to expand vertically if needed */
+    gap: 15px; /* Adds consistent spacing between the twin-bar groups */
+}
+
+.bar-group {
+    flex: 1; /* This is the secret: each group now takes an equal share of the width */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; /* Centers the two bars within their allotted slot */
+    gap: 6px;
+    height: 100%;
+    max-width: none; /* Remove any width restrictions */
+}
+
+.bar {
+    width: 35%; /* Bars take a percentage of their group's width */
+    max-width: 25px; /* Prevents bars from becoming unnaturally fat on huge screens */
+    min-height: 4px;
+    border-radius: 6px 6px 2px 2px;
+    transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.bar-focus { background: linear-gradient(to top, var(--primary), #a78bfa); }
+.bar-distraction { background: linear-gradient(to top, var(--accent), #f472b6); }
+
+
+.bar:hover::after {
+    content: attr(data-value);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    background: rgba(0,0,0,0.8);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: white;
+} 
+
+#avg-focus {
+    color: var(--text-main);
+    font-size: 1.1rem;
+}
+/* Responsive */
+@media (max-width: 600px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .stats-card {
+        grid-column: span 1;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
