@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zen Mode | Focus.in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <h2 style="color: var(--indian-gold); margin-bottom: 2rem;">Focus.in</h2>
+        <ul class="nav-links">
+            <li><a href="index.html"><i data-feather="grid"></i> Dashboard</a></li>
+            <li><a href="analytics.html"><i data-feather="bar-chart-2"></i> Analytics</a></li>
+            <li><a href="goals.html"><i data-feather="edit-3"></i> My Sadhana</a></li>
+            <li><a href="music.html"><i data-feather="music"></i> Focus Music</a></li>
+            <li class="active"><a href="zen.html"><i data-feather="clock"></i> Zen Mode</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+
+        <main class="zen-layout">
+
+            <div class="zen-timer-card glass">
+
+                <h2 class="zen-title">ZEN MODE</h2>
+
+                <!-- Time Input -->
+                <div class="zen-input-group">
+                    <label for="zen-minutes">Session Length (minutes)</label>
+                    <input type="number" id="zen-minutes" min="1" max="180" value="25">
+                </div>
+
+                <!-- Timer Display -->
+                <div id="zen-display">25:00</div>
+
+                <!-- Controls -->
+                <div class="zen-controls">
+                    <button id="zen-start" class="zen-btn">Start Session</button>
+                    <button id="zen-reset" class="zen-btn secondary">Reset</button>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+</html>

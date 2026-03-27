@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus Music | Focus.in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <h2 style="color: var(--indian-gold); margin-bottom: 2rem;">Focus.in</h2>
+        <ul class="nav-links">
+            <li><a href="index.html"><i data-feather="grid"></i> Dashboard</a></li>
+            <li><a href="analytics.html"><i data-feather="bar-chart-2"></i> Analytics</a></li>
+            <li><a href="goals.html"><i data-feather="edit-3"></i> My Sadhana</a></li>
+            <li class="active"><a href="music.html"><i data-feather="music"></i> Focus Music</a></li>
+            <li><a href="zen.html"><i data-feather="clock"></i> Zen Mode</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+        <header>
+            <h1>Focus Music</h1>
+            <p>Curated soundscapes for deep concentration</p>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card glass music-card">
+                <div class="card-header">
+                    <h3>Indian Classical Ambient</h3>
+                    <i data-feather="play-circle"></i>
+                </div>
+                <p>Relaxing Flute & Sitar melodies for focus.</p>
+                <a href="https://www.youtube.com/results?search_query=indian+classical+lofi" target="_blank" class="btn-link">Open Playlist</a>
+            </section>
+
+            <section class="card glass music-card">
+                <div class="card-header">
+                    <h3>Lofi Beats</h3>
+                    <i data-feather="headphones"></i>
+                </div>
+                <p>Classic chillhop study beats.</p>
+                <a href="https://www.youtube.com/live/jfKfPfyJRdk" target="_blank" class="btn-link">Open YouTube Live</a>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

@@ -1,4 +1,32 @@
 :root {
+    --indian-gold: #ffb347; /* Saffron Accent for the Indian Touch */
+}
+
+/* Sidebar Styling - This creates the nav on the left */
+.sidebar {
+    position: fixed;
+    left: 0; top: 0; bottom: 0;
+    width: 240px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+/* Push your existing dashboard-container to the right */
+.dashboard-container {
+    margin-left: 260px; 
+    width: calc(100% - 260px);
+}
+
+.nav-links { list-style: none; margin-top: 3rem; }
+.nav-links li { margin-bottom: 1.5rem; }
+.nav-links a { text-decoration: none; color: #94a3b8; display: flex; align-items: center; gap: 10px; }
+.nav-links li.active a { color: var(--indian-gold); font-weight: bold; }
+
+
+:root {
     --bg-dark: #0f172a;
     --primary: #8b5cf6; /* Violet */
     --secondary: #06b6d4; /* Cyan */
@@ -471,4 +499,450 @@ input[type="range"]::-webkit-slider-thumb:hover {
         flex-direction: row;
         gap: 1rem;
     }
+}
+:root {
+    --indian-gold: #ffb347; /* Saffron Gold */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    left: 0; top: 0; bottom: 0;
+    width: 250px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Subtle Indian Pattern Watermark */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/mandala.png'); 
+    opacity: 0.02; /* Very faint */
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Push your original dashboard content to the right */
+.dashboard-container {
+    margin-left: 270px;
+    width: calc(100% - 290px);
+}
+/* Music Page Styling */
+.btn-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--indian-gold);
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--indian-gold);
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background: var(--indian-gold);
+    color: var(--bg-dark);
+}
+
+/* Zen Mode Styling */
+.zen-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.zen-timer-card {
+    text-align: center;
+    padding: 4rem;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#zen-display {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.zen-btn {
+    background: var(--indian-gold);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.zen-btn.secondary {
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+}/* Diary Page Layout */
+.diary-layout {
+    margin-top: 2rem;
+}
+
+.diary-card {
+    height: 70vh; /* Takes up most of the vertical space */
+    display: flex;
+    flex-direction: column;
+}
+
+#diary-input {
+    width: 100%;
+    height: 100%;
+    background: transparent; /* Blends with the glass card */
+    border: none;
+    outline: none;
+    color: var(--text-main);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    resize: none; /* Prevents manual resizing of the box */
+    padding: 1rem 0;
+}
+
+/* Scrollbar styling for a clean look */
+#diary-input::-webkit-scrollbar {
+    width: 6px;
+}
+#diary-input::-webkit-scrollbar-thumb {
+    background: var(--indian-gold);
+    border-radius: 10px;
+}
+/* Analytics Specific Layout */
+.analytics-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.stats-summary-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.mini-stat {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid var(--indian-gold);
+}
+
+.mini-stat p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.chart-large {
+    min-height: 400px;
+}
+
+/* Make the bars wider and more professional on this page */
+.analytics-layout .bar {
+    width: 45px;
+    border-radius: 8px 8px 0 0;
+}
+
+.dot.focus { background: var(--primary); }
+/* Unique Analytics Horizontal Styling */
+.stat-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.stat-label { width: 80px; display: flex; flex-direction: column; }
+.stat-label span { font-weight: bold; color: var(--indian-gold); }
+.stat-label small { font-size: 0.7rem; color: var(--text-muted); }
+
+.progress-track {
+    flex-grow: 1;
+    height: 12px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.progress-fill.saffron {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--indian-gold));
+    box-shadow: 0 0 10px rgba(255, 179, 71, 0.3);
+    transition: width 0.8s ease-out;
+}
+/* --- ANALYTICS CONSULTANT STYLING --- */
+.consultant-card {
+    border: 1px solid rgba(255, 179, 71, 0.2) !important;
+    background: linear-gradient(135deg, rgba(255,179,71,0.05), transparent);
+}
+
+.remedy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates the two columns */
+    gap: 30px;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+}
+
+.label-muted {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.saffron-list {
+    list-style: none;
+    padding: 0;
+}
+
+.saffron-list li {
+    font-size: 0.9rem;
+    padding: 6px 0;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* The Indian Touch: Traditional Diamond Bullet */
+.saffron-list li::before {
+    content: "◈";
+    color: var(--indian-gold);
+    font-size: 0.8rem;
+}
+.pro-chart-area {
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    gap: 18px;
+    padding: 20px 20px 50px;
+    margin-top: 1rem;
+}
+
+.bar-group {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.bar {
+    width: 28px;
+    min-height: 6px;
+    align-self: flex-end;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.bar-focus {
+    background: linear-gradient(to top, #7c5cff, #a88bff);
+}
+
+.bar-distraction {
+    background: linear-gradient(to top, #ff4fa3, #ff7ab8);
+}
+
+.bar::before {
+    content: attr(data-value);
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #aab6d3;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.bar:hover::before {
+    opacity: 1;
+}
+
+.bar-group .day-name {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: #9aa6c4;
+    font-weight: 600;
+}
+.analytics-hero-card {
+    padding: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.hero-stat {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 1.2rem;
+}
+
+.hero-stat small {
+    display: block;
+    color: #9aa6c4;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.hero-stat h2 {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.1;
+}
+
+.hero-stat p {
+    color: #b9c3da;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.consultant-card {
+    padding: 1.5rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.consultant-content {
+    margin-top: 0.5rem;
+}
+
+#focus-suggestion {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: #f1f5ff;
+}
+
+.remedy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.remedy-column {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 18px;
+    padding: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    min-height: 180px;
+}
+
+.label-muted {
+    color: #9aa6c4;
+    margin-bottom: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.saffron-list {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.saffron-list li {
+    margin-bottom: 0.85rem;
+    line-height: 1.5;
+    color: #f2f4fb;
+}
+
+.sidebar-footer {
+    display: none;
+}
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, #ff4fa3, #ff7ab8);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+.bar-chart-container .bar-group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;   /* 🔥 THIS FIXES IT */
+    gap: 14px;
+    width: 100%;
+}
+.zen-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.zen-input-group label {
+    font-size: 1rem;
+    color: #b9c3da;
+    font-weight: 500;
+}
+
+.zen-input-group input {
+    width: 120px;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+}
+
+.zen-input-group input:focus {
+    border-color: var(--indian-gold);
 }
