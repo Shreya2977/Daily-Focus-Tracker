@@ -52,9 +52,7 @@ body {
     color: var(--text-main);
     min-height: 100vh;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 
 /* Background Ambient Orbs */
@@ -115,7 +113,7 @@ body {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 2rem;
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(15, 23, 42, 0.3);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 24px;
@@ -595,6 +593,11 @@ body::before {
     height: 70vh; /* Takes up most of the vertical space */
     display: flex;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
 }
 
 #diary-input {
