@@ -25,27 +25,27 @@ Helps improve deep work and concentration<br>
 🔹 Responsive Glassmorphism UI: A sleek, dark-themed interface utilizing backdrop blurs, ambient background orbs, and CSS gradients.<br>
 
 ## 🛠️ Technical Stack
-🛠️ Technical Stack
-Frontend: HTML5, CSS3 (Flexbox, Grid), JavaScript (ES6+)
-Styling & UI: Glassmorphism design, CSS Variables, Gradients, Backdrop Filters
-Icons: Feather Icons
-📊 Data Handling
-Storage: localStorage (client-side persistence)
-State Management: Vanilla JavaScript (DOM-based updates)
-📈 Visualization
-SVG Circular Progress Ring
-Custom-built Bar Charts (7-day analytics)
+🛠️ Technical Stack<br>
+Frontend: HTML5, CSS3 (Flexbox, Grid), JavaScript (ES6+)<br>
+Styling & UI: Glassmorphism design, CSS Variables, Gradients, Backdrop Filters<br>
+Icons: Feather Icons<br>
+📊 Data Handling<br>
+Storage: localStorage (client-side persistence)<br>
+State Management: Vanilla JavaScript (DOM-based updates)<br>
+📈 Visualization<br>
+SVG Circular Progress Ring<br>
+Custom-built Bar Charts (7-day analytics)<br>
 
 ## 📊 How It Works
-🔹Input: Users adjust sliders for Study, Social Media, and Entertainment.
-🔹 Constraint: If the user tries to add a 13th hour of study when 12 hours of social media are already logged, the logic trims the other values to maintain the 24-hour cap.
-🔹 Storage
-Data is stored using localStorage
-Enables retrieval of weekly performance
-🔹 Output (Analytics)
-Dashboard updates instantly
-Weekly graph reflects user data
-Insights are generated based on performance
+🔹Input: Users adjust sliders for Study, Social Media, and Entertainment.<br>
+🔹 Constraint: If the user tries to add a 13th hour of study when 12 hours of social media are already logged, the logic trims the other values to maintain the 24-hour cap.<br>
+🔹 Storage<br>
+Data is stored using localStorage<br>
+Enables retrieval of weekly performance<br>
+🔹 Output (Analytics)<br>
+Dashboard updates instantly<br>
+Weekly graph reflects user data<br>
+Insights are generated based on performance<br>
 
 ## Visualization:
 * Focus Ring: Turns green for high focus ($>70\%$), violet for moderate ($>40\%$), and red for high distraction.
