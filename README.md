@@ -4,25 +4,25 @@
 A modern web application built with HTML5, CSS3, and Vanilla JavaScript that provides real-time visualization of productivity metrics. The dashboard features a "Time Warden" system that enforces a strict 24-hour daily limit, ensuring data integrity for time-tracking  along with a Zen Mode timer and weekly performance insights, enabling users to build consistent habits.
 
 ## ✨ Key Features
-🔹 Time Warden System: Intelligent input logic that automatically adjusts sliders to prevent the total logged time from exceeding 24 hours.
-🔹 Dynamic Focus Scoring: A circular progress ring that calculates a productivity score based on the ratio of study time to total logged time.
-🔹 Distraction Analysis: A horizontal progress bar with a glowing glassmorphism effect that tracks Social Media and Entertainment consumption.
-🔹 Weekly Twin-Bar Chart: A full-width data visualization comparing focus levels vs. distraction levels across the last seven days.
-🔹 Dharma Insights (Smart Suggestions)
-Provides actionable insights such as:
-Reducing distractions
-Improving consistency
-Building better focus habits
-🔹 Zen Mode (Custom Timer)
-User-defined session duration
-Start / Pause / Reset controls
-Minimal distraction-free interface
-🔹 Focus Music 
-Play calming focus music / ambient sounds
-Simple controls (Play / Pause)
-Designed to work with Zen Mode
-Helps improve deep work and concentration
-🔹 Responsive Glassmorphism UI: A sleek, dark-themed interface utilizing backdrop blurs, ambient background orbs, and CSS gradients.
+🔹 Time Warden System: Intelligent input logic that automatically adjusts sliders to prevent the total logged time from exceeding 24 hours.<br>
+🔹 Dynamic Focus Scoring: A circular progress ring that calculates a productivity score based on the ratio of study time to total logged time.<br>
+🔹 Distraction Analysis: A horizontal progress bar with a glowing glassmorphism effect that tracks Social Media and Entertainment consumption.<br>
+🔹 Weekly Twin-Bar Chart: A full-width data visualization comparing focus levels vs. distraction levels across the last seven days.<br>
+🔹 Dharma Insights (Smart Suggestions)<br>
+Provides actionable insights such as:<br>
+Reducing distractions<br>
+Improving consistency<br>
+Building better focus habits<br>
+🔹 Zen Mode (Custom Timer)<br>
+User-defined session duration<br>
+Start / Pause / Reset controls<br>
+Minimal distraction-free interface<br>
+🔹 Focus Music <br>
+Play calming focus music / ambient sounds<br>
+Simple controls (Play / Pause)<br>
+Designed to work with Zen Mode<br>
+Helps improve deep work and concentration<br>
+🔹 Responsive Glassmorphism UI: A sleek, dark-themed interface utilizing backdrop blurs, ambient background orbs, and CSS gradients.<br>
 
 ## 🛠️ Technical Stack
 🛠️ Technical Stack
