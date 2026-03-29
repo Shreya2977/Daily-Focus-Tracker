@@ -1,4 +1,4 @@
-# Daily-Focus-Tracker
+<img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/b6a1dd17-927b-4958-80ef-fa8a08e3d0a7" /># Daily-Focus-Tracker
 
 ## 🚀 Project Overview: Daily Focus & Audit Dashboard
 A modern web application built with HTML5, CSS3, and Vanilla JavaScript that provides real-time visualization of productivity metrics. The dashboard features a "Time Warden" system that enforces a strict 24-hour daily limit, ensuring data integrity for time-tracking  along with a Zen Mode timer and weekly performance insights, enabling users to build consistent habits.
@@ -53,6 +53,7 @@ Insights are generated based on performance<br>
 * Analytics Dashboard: Displays weekly focus and distraction trends, Shows average focus score and peak performance day, Provides smart suggestions (Dharma Insights) based on user performance.
 
 
-<img width="1365" height="602" alt="Screenshot 2026-02-15 105112" src="https://github.com/user-attachments/assets/616513a4-314f-498d-8135-ad1cd371da89" />
+<img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/fcd6fd8c-a978-4752-8cc9-2c03a577fcac" />
+
 
 <img width="1365" height="608" alt="Screenshot 2026-02-15 105143" src="https://github.com/user-attachments/assets/b8582d54-51c8-4e2b-a537-06f87a0fba2b" />
