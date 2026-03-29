@@ -53,7 +53,14 @@ Insights are generated based on performance<br>
 * Analytics Dashboard: Displays weekly focus and distraction trends, Shows average focus score and peak performance day, Provides smart suggestions (Dharma Insights) based on user performance.
 
 <img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/b6a1dd17-927b-4958-80ef-fa8a08e3d0a7" />
-<img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/fcd6fd8c-a978-4752-8cc9-2c03a577fcac" />
+<img width="1365" height="603" alt="image" src="https://github.com/user-attachments/assets/9dce845c-a3d2-4274-85c9-ad172864bb1e" />
+<img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/2de732ce-9847-4cc6-a75e-51c4f20f89bc" />
+<img width="1364" height="601" alt="image" src="https://github.com/user-attachments/assets/9dc1d2f0-fe67-42c9-b6bc-1a76c2e72ced" />
+<img width="1364" height="601" alt="image" src="https://github.com/user-attachments/assets/27ff57a7-e290-4971-8da5-b88b0070b0c3" />
+<img width="1365" height="606" alt="image" src="https://github.com/user-attachments/assets/63911008-6eb7-40b6-affc-4236856e630a" />
+<img width="1365" height="600" alt="image" src="https://github.com/user-attachments/assets/6eb6ef1d-15d5-4511-8404-7a0e640d9572" />
 
 
-<img width="1365" height="608" alt="Screenshot 2026-02-15 105143" src="https://github.com/user-attachments/assets/b8582d54-51c8-4e2b-a537-06f87a0fba2b" />
+
+
+
