@@ -55,6 +55,7 @@ Insights are generated based on performance<br>
 <img width="1365" height="599" alt="image" src="https://github.com/user-attachments/assets/b6a1dd17-927b-4958-80ef-fa8a08e3d0a7" />
 <img width="1365" height="603" alt="image" src="https://github.com/user-attachments/assets/9dce845c-a3d2-4274-85c9-ad172864bb1e" />
 <img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/2de732ce-9847-4cc6-a75e-51c4f20f89bc" />
+<img width="1365" height="600" alt="image" src="https://github.com/user-attachments/assets/5d9944c9-dd51-4f8f-a532-859233a15106" />
 <img width="1364" height="601" alt="image" src="https://github.com/user-attachments/assets/27ff57a7-e290-4971-8da5-b88b0070b0c3" />
 <img width="1365" height="606" alt="image" src="https://github.com/user-attachments/assets/63911008-6eb7-40b6-affc-4236856e630a" />
 <img width="1365" height="600" alt="image" src="https://github.com/user-attachments/assets/6eb6ef1d-15d5-4511-8404-7a0e640d9572" />
